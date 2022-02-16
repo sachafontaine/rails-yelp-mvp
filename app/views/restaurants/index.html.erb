@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <h1 class="text-center">Yelp</h1>
+
+  <% @restaurants.each do |restaurant| %>
+    <ul class="text-center">
+      <li><%= link_to restaurant.name, restaurant_path(restaurant) %> - <%= restaurant.address %> - <%= restaurant.category %> - <%= restaurant.phone_number %></li>
+    </ul>
+  <% end %>
+
+  <%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary mt-3" %>
+
+</div>

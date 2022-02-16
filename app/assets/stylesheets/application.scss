@@ -1,0 +1,34 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+.navbar-custom {
+  background-color: #095FD6;
+}
+.navbar-custom a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+
+}
+
+.list-group-item {
+  background-color: #F4F4F4;
+  color: #095FD6;;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #095FD6;;
+}
